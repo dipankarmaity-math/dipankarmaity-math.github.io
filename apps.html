@@ -8,28 +8,80 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-    <body>
-
+<body>
     <div id="header-placeholder"></div>
 
-    <script src="script.js"></script>
-</body>
-    
-<body>
-   
+    <header>
+        <h1>Apps</h1>
+    </header>
 
     <div class="container">
-        <section class="content-section">
-            <span class="section-category">The Glyph Keyboard</span> 
-            <h2>An Android keyboard with LaTeX support for Mathematicians</h2>
-            <p>This Android keyboard app is designed for Mathematicians. Hold a key for accents, and for its LaTeX suggestions. Type \beta for β, \A for 𝒜 and 𝔸, \infty for ∞. You can, in fact, create your own list of LaTeX suggestions for each key long press. + Many other features you are welcome to figure out. This has been vibe coded using Grok AI</p>
+        <section class="content-section" style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
             
-            <a href="https://dipankarmaity-math.github.io/Glyph.apk" download style="display: inline-flex; align-items: center; gap: 8px;">
-                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
-                    <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                </svg>
-                Get Glyph.apk
-            </a>
+            <!-- Left Text Content -->
+            <div style="flex: 1; min-width: 300px;">
+                <span class="section-category">The Glyph Keyboard</span> 
+                <h2>An Android keyboard with LaTeX support for Mathematicians</h2>
+                <p>This Android keyboard app is designed for Mathematicians. Hold a key for accents, and for its LaTeX suggestions. Type \beta for β, \A for 𝒜 and 𝔸, \infty for ∞. You can, in fact, create your own list of LaTeX suggestions for each key long press. + Many other features you are welcome to figure out. This has been vibe coded using Grok AI</p>
+                
+                <a href="https://dipankarmaity-math.github.io/Glyph.apk" download style="display: inline-flex; align-items: center; gap: 8px;">
+                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+                        <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    </svg>
+                    Get Glyph.apk
+                </a>
+            </div>
+
+            <!-- Right Mockup Content (Pure HTML/CSS Keyboard) -->
+            <div style="flex-shrink: 0; display: flex; flex-direction: column; gap: 4px; width: 100%; max-width: 260px; margin: 0 auto; background-color: #0f141e; padding: 8px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); font-family: sans-serif; user-select: none;">
+                
+                <!-- Suggestion Bar -->
+                <div style="display: flex; gap: 4px; margin-bottom: 4px;">
+                    <div style="flex: 1; height: 28px; background: #1e2433; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #a0aec0; font-size: 12px;">I</div>
+                    <div style="flex: 1.5; height: 28px; background: #3b82f6; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 13px; font-weight: bold;">The</div>
+                    <div style="flex: 1; height: 28px; background: #1e2433; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #a0aec0; font-size: 12px;">It</div>
+                </div>
+
+                <!-- Number Row -->
+                <div style="display: flex; gap: 3px; justify-content: center;">
+                    <script>
+                        document.write('1234567890'.split('').map(k => `<div style="width: 22px; height: 32px; border: 1px solid #2dd4bf; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 14px;">${k}</div>`).join(''));
+                    </script>
+                </div>
+
+                <!-- Top Row -->
+                <div style="display: flex; gap: 3px; justify-content: center;">
+                    <script>
+                        document.write('QWERTYUIOP'.split('').map(k => `<div style="width: 22px; height: 32px; border: 1px solid #2dd4bf; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 14px;">${k}</div>`).join(''));
+                    </script>
+                </div>
+
+                <!-- Home Row -->
+                <div style="display: flex; gap: 3px; justify-content: center; padding: 0 10px;">
+                    <script>
+                        document.write('ASDFGHJKL'.split('').map(k => `<div style="width: 22px; height: 32px; border: 1px solid #2dd4bf; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 14px;">${k}</div>`).join(''));
+                    </script>
+                </div>
+
+                <!-- Bottom Row -->
+                <div style="display: flex; gap: 3px; justify-content: center;">
+                    <div style="width: 32px; height: 32px; background: #34d399; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #000; font-size: 12px; font-weight: bold;">Aa</div>
+                    <script>
+                        document.write('ZXCVBNM'.split('').map(k => `<div style="width: 22px; height: 32px; border: 1px solid #2dd4bf; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 14px;">${k}</div>`).join(''));
+                    </script>
+                    <div style="width: 32px; height: 32px; border: 1px solid #f43f5e; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #f43f5e; font-size: 16px;">⌫</div>
+                </div>
+
+                <!-- Spacebar Row -->
+                <div style="display: flex; gap: 3px; justify-content: center;">
+                    <div style="width: 34px; height: 32px; border: 1px solid #2dd4bf; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #a0aec0; font-size: 11px;">123</div>
+                    <div style="width: 22px; height: 32px; border: 1px solid #2dd4bf; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 14px;">,</div>
+                    <div style="flex: 1; height: 32px; border: 1px solid #2dd4bf; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #64748b; font-size: 11px;">English (US)</div>
+                    <div style="width: 22px; height: 32px; border: 1px solid #2dd4bf; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 14px;">.</div>
+                    <div style="width: 34px; height: 32px; border: 1px solid #2dd4bf; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 16px;">↵</div>
+                </div>
+            </div>
+
         </section>
     </div>
 
